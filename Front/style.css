@@ -77,8 +77,32 @@
 	font-size: 80px;
 }
 .home-text{
-	color: #8b8787;
+	color: #a5a1a1;
 	font-size: 30px;
 }
+.home-button{
+	margin-top: 10px;
+	padding: 15px 30px;
+	background-color: #fd3d0d;
+	border:0px ;
+	color: #ffffff;
+	border-radius: 4px;
+	font-size: 20px;
+}
 /* # end section home style */
+/* # start section product style */
+.section-product{
+width: 100%;
+}
+.lable{
+margin:0 auto;
+}
+.product-text{
+	margin:0 auto;
+}
+.product{
+	display: flex;
+}
+/* # end section product style */
+
 /* # end main style */
