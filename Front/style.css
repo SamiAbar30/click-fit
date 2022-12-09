@@ -3,7 +3,7 @@
 	margin: 0;
 	list-style-type: none;
 }
-/* # start header style */
+
 .header {
 	width: 100%;
 	height: 90px;
@@ -15,7 +15,7 @@
 	position: -webkit-sticky;
 	top: 0;
 }
-/* # start logo style */
+
 #logo {
 	margin: 15px 0 0 200px;
 }
@@ -26,8 +26,7 @@
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-/* # end logo style */
-/* # start navbar list style */
+
 .navbar-list {
 	display: flex;
 	margin: 30px 200px 0 0;
@@ -45,15 +44,7 @@
 	color: #fd3d0d;
 	border: 2px solid #fd3d0d;
 }
-.navbar-link:hover {
-	color: #fd3d0d;
-	border-color: #fd3d0d;
-	border: 2px solid;
-	transition: color 1s, border-color 1s;
-}
-/* # end navbar list style */
-/* # end header style */
-/* # start main style */
+
 .main {
 	width: 100%;
 }
@@ -61,7 +52,7 @@
 	width: 100%;
 	height: 650px;
 }
-/* # start section home style */
+
 .section-home {
 	background-color: #151c23;
 	background-image: url('./img/hero-bg.png');
@@ -88,8 +79,7 @@
 	border-radius: 4px;
 	font-size: 20px;
 }
-/* # end section home style */
-/* # start section product style */
+
 .section-product {
 	width: 100%;
 	text-align: center;
@@ -105,7 +95,7 @@
 	width: 200px;
 }
 .product-text {
-	color: #151c23;
+	color: #333435;
 	font-size: 50px;
 	margin: 20px 5px;
 }
@@ -115,35 +105,28 @@
 }
 .card-product {
 	border-radius: 40px;
-	width: 300px;
+	width: 320px;
 	border: #fdfdfd 2px solid;
-	background-color: #fd3d0d;
+	background-color: #fd3d0dde;
 	transition: margin-top 1s, border-radius 1s, width 1s;
 	padding-bottom: 20px;
 }
-.card-product:hover {
-	border-radius: 40px;
-	width: 350px;
-	border: #fdfdfd 2px solid;
-	transition: border-radius 1s, width 1s;
-}
-.card-product:hover .card-img {
-	margin-top: 20px;
-	border-radius: 40px;
-	width: 300px;
-	border: #fdfdfd 2px solid;
-	transition: margin-top 1s, border-radius 1s, width 1s;
-}
+
 .card-img {
 	object-fit: cover;
-	width: 100%;
+	width: 95%;
 	height: 200px;
 	border-radius: 40px;
 	margin: 0;
+	margin-top: 10px;
 	transition: margin 1s, height 1s, border-radius 1s, width 1s;
 }
 .card-body {
 	text-align: left;
+}
+.body-box-body {
+	width: 95%;
+	height: 130px;
 }
 .body-text-header {
 	margin: 5px 0;
@@ -168,7 +151,6 @@
 	text-align: center;
 	color: #fcfcfc;
 	align-items: center;
-	
 }
 
 .upload-lable {
@@ -188,8 +170,8 @@
 	margin-top: 50px;
 }
 
-.upload-area{
-	display: flex; 
+.upload-area {
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 60px;
@@ -199,21 +181,196 @@
 	border-radius: 10px;
 	width: 50%;
 	height: 200px;
-	display: flex; 
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 15px;
-	
-	transition:font-size 1s, border 1s, height 1s, border-radius 1s, width 1s;
+	transition: font-size 1s, border 1s, height 1s, border-radius 1s, width 1s;
 }
-.upload-image-area:hover {
-	border: #cecdcd dashed 5px;
-	border-radius: 8px;
-	width: 50%;
-	height: 220px;
-	transition: border 1s, height 1s, border-radius 1s, width 1s,font-size 1s;
-	font-size: 20px;
-}
-/* # end section product style */
 
-/* # end main style */
+@media only screen and (min-width: 1024px) {
+	.navbar-link:hover {
+		color: #fd3d0d;
+		border-color: #fd3d0d;
+		border: 2px solid;
+		transition: color 1s, border-color 1s;
+	}
+	.card-product:hover {
+		border-radius: 40px;
+		width: 350px;
+		border: #fdfdfd 2px solid;
+		transition: border-radius 1s, width 1s;
+	}
+	.card-product:hover .card-img {
+		margin-top: 20px;
+		border-radius: 40px;
+		width: 300px;
+		border: #fdfdfd 2px solid;
+		transition: margin-top 1s, border-radius 1s, width 1s;
+	}
+	.upload-image-area:hover {
+		border: #cecdcd dashed 5px;
+		border-radius: 8px;
+		width: 50%;
+		height: 220px;
+		transition: border 1s, height 1s, border-radius 1s, width 1s, font-size 1s;
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#logo {
+		margin: 20px 0 0 10px;
+	}
+	.navbar-list {
+		display: flex;
+		margin: 30px 50px 0 0;
+	}
+	.section {
+		height: 560px;
+	}
+	.home-content {
+		margin-left: 10px;
+	}
+	.home-text-header {
+		font-size: 60px;
+	}
+	.home-text {
+		font-size: 20px;
+	}
+	.home-button {
+		padding: 10px 15px;
+		font-size: 20px;
+	}
+
+	.section-product {
+		width: 100%;
+		height: 700px;
+		text-align: center;
+	}
+	.lable {
+		width: 150px;
+	}
+	.product-text {
+		font-size: 45px;
+	}
+	.card-product {
+		width: 320px;
+	}
+	.upload-text {
+		font-size: 40px;
+	}
+	.card-body {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.header {
+		height: 150px;
+		display: grid;
+		justify-content: center;
+		position: static;
+	}
+
+	#logo {
+		margin: 10px 0 0 100px;
+	}
+
+	.navbar-list {
+		margin: 0 0 0 0;
+	}
+
+	.section {
+		width: 100%;
+		height: 350px;
+	}
+	.section-product {
+		height: 900px;
+	}
+	.home-image {
+		display: none;
+	}
+
+	.home-content {
+		margin: auto;
+		width: 100%;
+	}
+	.home-text-header {
+		font-size: 40px;
+	}
+	.home-text {
+		font-size: 25px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.product {
+		display: grid;
+		justify-content: center;
+	}
+	.card-product {
+		display: flex;
+		width: 95%;
+		height: 220px;
+		padding: 5px 0px 0px 5px;
+	}
+
+	.card-body {
+		text-align: center;
+	}
+	.body-box-body {
+		width: 95%;
+		height: 100px;
+	}
+	.body-text-header {
+		margin: 5px 0;
+		font-size: 18px;
+	}
+	.body-text-body {
+		margin: 1px;
+	}
+
+	.body-link {
+		margin: 0;
+		padding: 0;
+		display: none;
+	}
+	.upload-lable {
+		margin-top: 20px;
+		padding: 5px 5px;
+
+		font-size: 20px;
+		width: 150px;
+	}
+	.upload-text {
+		font-size: 20px;
+		margin: 10px 5px;
+		margin-top: 10px;
+	}
+
+	.upload-image-area {
+		height: 150px;
+	}
+}
+@media only screen and (max-width: 520px) {
+	#logo {
+		margin: 15px 0 0 60px;
+	}
+	.section-product {
+		height: 1300px;
+	}
+	.card-product {
+		display: grid;
+		height: 360px;
+	}
+	.home-content {
+		margin-left: 8px;
+	}
+	.navbar-list {
+		margin: 0px 0px 0 0;
+	}
+
+	.navbar-link {
+		padding: 10px 15px;
+		margin: 15px 15px;
+	}
+}

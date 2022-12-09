@@ -8,6 +8,12 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div style="background-color: #151c23; color: white; border-bottom: 1px solid #393e42">
+			<marquee class="marquee-fact" >
+        Geeks for Geeks
+    </marquee>
+		</div>
+		
 		<header class="header">
 			<a id="logo" style="display: flex">
 				<img src="./img/barbell.png" alt="" width="50px" height="50px" />
@@ -41,8 +47,8 @@
 					</p>
 					<button class="home-button">Get Started</button>
 				</div>
-				<div class="">
-					<img src="./img/about-banner.png" />
+				<div class="home-image" style="width: 660px;">
+					<img src="./img/about-banner.png"  style="width: 100%;"/>
 				</div>
 			</section>
 			<div class=""></div>
@@ -67,12 +73,14 @@
 							<p class="body-text-header">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
+							<div class="body-box-body">
 							<p class="body-text-body">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
 								possimus harum consectetur? Porro libero nulla eius ut, voluptas
 								quam dolor, reprehenderit omnis saepe labore adipisci vel iste
 								ratione voluptatum.
 							</p>
+						</div>
 							<a class="body-link">small text</a>
 						</div>
 					</div>
@@ -86,12 +94,14 @@
 							<p class="body-text-header">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
+							<div class="body-box-body">
 							<p class="body-text-body">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
 								amet voluptatum tempore beatae! Accusantium eligendi
 								reprehenderit natus maiores consequuntur quaerat eos quidem,
 								maxime fugiat fuga a commodi deleniti illum magnam.
 							</p>
+						</div>
 							<a class="body-link">small text</a>
 						</div>
 					</div>
@@ -105,12 +115,15 @@
 							<p class="body-text-header">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
-							<p class="body-text-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Exercitationem nihil nesciunt dignissimos corporis! Iusto
-								architecto excepturi animi quas, dolorem fugit fugiat, officia
-								maxime assumenda aliquam corrupti expedita dolorum
-							</p>
+							<div class="body-box-body">
+								<p class="body-text-body">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Exercitationem nihil nesciunt dignissimos corporis! Iusto
+									architecto excepturi animi quas, dolorem fugit fugiat, officia
+									maxime assumenda aliquam
+								</p>
+							</div>
+							
 							<a class="body-link">small text</a>
 						</div>
 					</div>
@@ -124,7 +137,7 @@
 				<p class="upload-text">You Want To Be With Us UpLoad Your Photo</p>
 				<div class="upload-area">
 					<label for="upload-image" class="upload-image-area">
-						<div>
+						<div id="upload-area-text">
 							select a file
 							<p style="padding-top: 10px">
 								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
