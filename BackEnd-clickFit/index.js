@@ -18,6 +18,7 @@ app.post('/v1/upload-image', (req, res, next) => {
 		fs.writeFileSync(path, base64Data, { encoding: 'base64' });
 		return res.status(200).send({ msg: 'your image uploadded with succses' });
 	} catch (e) {
+		console.log(e);
 		return res
 			.status(500)
 			.send({ error: 'there is a problem try to upload an outher one' });
