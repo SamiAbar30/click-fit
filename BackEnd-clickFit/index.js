@@ -26,14 +26,6 @@ app.post('/v1/upload-image', (req, res, next) => {
 	}
 });
 
-
-app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
-})
-
 app.listen(3001, () => {
 	console.log(`server running on port 3001`);
 });
-
-
-module.exports = app
